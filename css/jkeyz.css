@@ -1,0 +1,226 @@
+html{
+    box-sizing:border-box;
+}
+body{
+    text-align:center;
+    background-color:#333;
+}
+.maincontainer{
+    width:1000px;
+    height:850px;
+    margin-left:auto;
+    margin-right:auto;
+  
+}
+.header{
+    width:980px;
+    background-color:rgb(56, 199, 151);
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    border-radius: 18px;
+    color:white;
+    opacity:1;
+    -webkit-animation-name: erons;
+    -webkit-animation-duration:4s;
+    -webkit-animation-iteration-count:4;
+    -webkit-animation-direction:alternate;
+    animation-name:erons;
+    animation-duration:4s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+#jay{
+    border:hidden;
+    border-radius:12px;
+    margin:2px;
+    float:left;
+    height:80px;
+    width: 90px;
+    opacity:0.67;
+    -webkit-transition: width 4s;
+    transition: width 4s;
+}
+#jay:hover{
+    width:100px;
+    opacity:1.0;
+}
+@-webkit-keyframes erons{
+    from{background-color:rgb(56, 199, 151);}
+    to{background-color:rgba(248, 97, 170, 0.781);}
+}
+@keyframes erons{
+    from{background-color:rgb(56, 199, 151);}
+    to{background-color:rgba(248, 97, 170, 0.781);}
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+ /* The navbar container */
+.topnav {
+    width:990px;
+    overflow: hidden;
+    border-radius:18px;
+    margin:8px 0 8px 0;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(8, 24, 12);
+    color:rgba(255, 255, 255, 0.822);
+}
+.active {
+    background-color: #4CAF50;
+}
+.content{
+    width:1000px;
+    height:550px;
+    border:0;
+}
+.con1{
+    width:320px;
+    height:200px;
+    border:0;
+    background-color:white;
+    border-radius: 15px;
+    margin:4px;
+    padding:3px;
+    float:left;
+}
+.con2{
+    width:320px;
+    height:200px;
+    border:0;
+    border-radius: 15px;
+    background-color:rgba(59, 231, 180, 0.4);
+    margin:4px;
+    padding: 3px;
+    float:left;
+}
+.con3{
+    width:310px;
+    height:200px;
+    border:0;
+    border-radius: 15px;
+    background:url("../image/9th image.jpg");
+    margin:4px;
+    padding: 3px;
+    float:left;
+}
+#showContainer{
+    /*main wrapper for all images*/
+    width:990px;
+    height:300px;
+    border:0;
+    border-radius:18px;
+    padding:0;
+    margin-top: 4px;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19);/*
+    background:url("../image/stars image.jpg");
+    background:repeat;*/
+}
+#img1{
+    border-radius:18px;
+    width:990px;
+    height:300px;
+}
+.navButton{
+    /*make buttons look nice*/
+    cursor:pointer;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    float:left;
+    padding:10px;
+    margin-right:5px;
+    overflow:hidden;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+    background:#000000;
+    opacity:0.65;
+    user-select: none;
+}
+.navButton:hover{
+    opacity: 1; 
+}
+.caption{
+    float:right;
+}
+.mySlides:not(:first-child){
+    /*hide all images except the first*/
+    display:none;
+}
+.dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active{
+      background-color:green;
+  }
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+.footer{
+    overflow: hidden;
+    background-color:#dddddd;
+    border-radius:18px;
+    margin-top:14px;
+    height:25px;
+    font-style: oblique;
+    text-align:center;
+    text-shadow: 4rem;
+    color:rgb(10, 10, 20);
+    font-weight:bolder;
+    padding:5px;
+}
